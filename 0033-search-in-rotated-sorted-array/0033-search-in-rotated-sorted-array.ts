@@ -38,7 +38,7 @@ function search(nums: number[], target: number): number {
         return -1;
     }
     const k = findK(0, nums.length - 1, nums);
-    console.log(k)
+
     if(nums[k] == target) return k;
     if(k == -1) return binarySearch(nums, target);
     else if(target <= nums[k] && target >= nums[0]) return binarySearch(nums.slice(0, k + 1), target);
