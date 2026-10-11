@@ -8,7 +8,7 @@ function setZeroes(matrix: number[][]): void {
         for(let j = 0; j < n; j++) {
             if(i < m && matrix[i][j] == 0) {
                 zeroCurrent = true;
-                for(let k = i; k >= 0; k--) {
+                for(let k = i - 1; k >= 0; k--) {
                     matrix[k][j] = 0;
                 }
             }
