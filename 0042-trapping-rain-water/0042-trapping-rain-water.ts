@@ -1,9 +1,11 @@
 
 
 function trap(height: number[]): number {
-    let maxR = [], maxL = [], result = 0;
-    const L = height.length
+        const L = height.length
+
     if(L < 3) return 0;
+
+    let maxR = [], maxL = [], result = 0;
     maxL[0] = -1;
     maxL[1] = height[0]
     maxR[L - 1] = -1;
